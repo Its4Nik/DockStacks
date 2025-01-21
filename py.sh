@@ -1,12 +1,13 @@
 #!/bin/bash
 
-python3 -m venv ./
-
 echo "
 ./lib*
 ./bin
 ./include
 " > .gitignore
+
+python3 -m venv ./
+
 
 source ./bin/activate
 
@@ -20,3 +21,9 @@ node ./src/createTemplate.js
 if [[ ! "$CI" = "true" ]]; then
     python3 -m http.server 8080 -d ./src/
 fi
+
+echo "
+./lib*
+./bin
+./include
+" > .gitignore

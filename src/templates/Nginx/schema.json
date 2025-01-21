@@ -1,5 +1,5 @@
 {
-  "$schema": "https://its4nik.github.io/dockstacks/schema.json",
+  "$schema": "https://its4nik.github.io/DockStacks/schema.json",
   "name": "Nginx",
   "services": {
     "app": {

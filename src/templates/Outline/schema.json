@@ -1,20 +1,12 @@
 {
-  "$schema": "https://its4nik.github.io/dockstacks/schema.json",
+  "$schema": "https://its4nik.github.io/DockStacks/schema.json",
   "name": "Outline Stack",
   "services": {
     "outline": {
       "image": "docker.getoutline.com/outlinewiki/outline:latest",
-      "ports": [
-        "3000:3000"
-      ],
-      "volumes": [
-        "./outline/storage-data:/var/lib/outline/data"
-      ],
-      "depends_on": [
-        "postgres",
-        "redis",
-        "api"
-      ],
+      "ports": ["3000:3000"],
+      "volumes": ["./outline/storage-data:/var/lib/outline/data"],
+      "depends_on": ["postgres", "redis", "api"],
       "environment": {
         "DATABASE_URL": "postgres://outlinedb:${POSTGRES_PASSWORD}@${local_ip}:${POSTGRES_PORT}/outline",
         "DATABASE_CONNECTION_POOL_MIN": "1",
@@ -86,26 +78,15 @@
         "SMTP_REPLY_EMAIL": "",
         "SMTP_TLS_CIPHERS": "",
         "SMTP_SECURE": "false"
-      ]
+      }
     },
     "redis": {
       "image": "redis",
-      "ports": [
-        "6379:6379"
-      ],
-      "volumes": [
-        "./outline/redis.conf:/redis.conf"
-      ],
-      "command": [
-        "redis-server",
-        "/redis.conf"
-      ],
+      "ports": ["6379:6379"],
+      "volumes": ["./outline/redis.conf:/redis.conf"],
+      "command": ["redis-server", "/redis.conf"],
       "healthcheck": {
-        "test": [
-          "CMD",
-          "redis-cli",
-          "ping"
-        ],
+        "test": ["CMD", "redis-cli", "ping"],
         "interval": "10s",
         "timeout": "30s",
         "retries": 3
@@ -113,21 +94,10 @@
     },
     "postgres": {
       "image": "postgres",
-      "ports": [
-        "5432:5432"
-      ],
-      "volumes": [
-        "./outline/database-data:/var/lib/postgresql/data"
-      ],
+      "ports": ["5432:5432"],
+      "volumes": ["./outline/database-data:/var/lib/postgresql/data"],
       "healthcheck": {
-        "test": [
-          "CMD",
-          "pg_isready",
-          "-d",
-          "outline",
-          "-U",
-          "user"
-        ],
+        "test": ["CMD", "pg_isready", "-d", "outline", "-U", "user"],
         "interval": "30s",
         "timeout": "20s",
         "retries": 3
@@ -140,9 +110,7 @@
     },
     "api": {
       "image": "ghcr.io/itteco/iframely:latest",
-      "ports": [
-        "8061:8061"
-      ],
+      "ports": ["8061:8061"],
       "volumes": [
         "./outline/iframely/config.local.js:/iframely/config.local.js"
       ],
