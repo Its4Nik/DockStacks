@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(250px, 1fr)
+    ); /* Square-like items */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Limit max width to avoid stretching across the screen */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+.bubble {
+    border: 1px solid darkgray; /* Darker border */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #000000; /* Darker background for bubbles */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+    transition:
+        transform 0.2s,
+        background-color 0.3s;
+    color: #e0e0e0; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px 10px 1px #818cf8;
+}
+
+.bubble:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.3); /* Darken background on hover */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #222; /* Dark background for modal */
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    position: relative;
+    color: #e0e0e0; /* Light text color */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #e0e0e0; /* Light color for close button */
+}
+
+img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+h3 {
+    font-weight: 400;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: lightgrey;
+}
+
+.hero {
+    max-height: 40rem;
+    max-width: 40rem;
+}

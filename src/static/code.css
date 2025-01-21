@@ -1,0 +1,65 @@
+/* Base Styles */
+.codehilite {
+    background: #2d2d2d; /* Dark background */
+    color: #f8f8f2; /* Light text */
+    padding-inline: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: "Fira Code", monospace; /* Monospaced font */
+}
+
+/* Span Classes for Highlighting */
+.codehilite .nt {
+    /* Name Tags */
+    color: #66d9ef;
+    font-weight: bold;
+}
+
+.codehilite .p {
+    /* Punctuation */
+    color: #f8f8f2;
+}
+
+.codehilite .w {
+    /* Whitespace */
+    color: #75715e;
+}
+
+.codehilite .l {
+    /* Literals */
+    color: #a6e22e;
+}
+
+.codehilite .l.l-Scalar.l-Scalar-Plain {
+    /* Scalar Plain Literals */
+    color: #a6e22e;
+}
+
+.codehilite .s {
+    /* Strings */
+    color: #e6db74;
+}
+
+.codehilite .p.p-Indicator {
+    /* Indicators */
+    color: #fd971f;
+}
+
+/* Scrollbar Styling (optional) */
+.codehilite::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.codehilite::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.codehilite::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+.codehilite::-webkit-scrollbar-track {
+    background-color: #2d2d2d;
+}

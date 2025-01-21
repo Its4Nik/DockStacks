@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+    "title": "Docker Compose App Store Schema Descriptor",
+  "description": "Defines the structure and validation rules for app templates in the Docker Compose App Store.",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the stack or template.",
+      "example": "my-stack"
+    },
+    "services": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "image": {
+            "type": "string",
+            "description": "Docker image for the service.",
+            "example": "nginx:latest"
+          },
+          "ports": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Port mappings (e.g., 80:80)."
+            }
+          },
+          "environment": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "description": "Environment variable key-value pairs."
+            }
+          },
+          "volumes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Volume mappings (e.g., /host:/container)."
+            }
+          }
+        },
+        "required": ["image"]
+      },
+      "description": "Defines the services in the stack."
+    },
+    "networks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "driver": {
+            "type": "string",
+            "description": "Network driver (e.g., bridge, overlay)."
+          },
+          "driver_opts": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "description": "Options for the network driver."
+            }
+          }
+        }
+      },
+      "description": "Defines custom networks for the stack."
+    }
+  },
+  "required": ["name", "services"]
+}

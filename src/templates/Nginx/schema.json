@@ -1,0 +1,20 @@
+{
+  "$schema": "https://its4nik.github.io/dockstacks/schema.json",
+  "name": "Nginx",
+  "services": {
+    "app": {
+      "image": "nginx:latest",
+      "ports": ["80:80"],
+      "environment": {
+        "NGINX_HOST": "localhost",
+        "NGINX_PORT": "80"
+      },
+      "volumes": ["./data:/data"]
+    }
+  },
+  "networks": {
+    "default": {
+      "driver": "bridge"
+    }
+  }
+}
