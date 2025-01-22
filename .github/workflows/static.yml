@@ -27,7 +27,8 @@ jobs:
 
       - name: Setup files
         run: |
-          node ./src/createTemplate.js
+          pip install -r ./requirements.txt
+          python3 ./src/createTemplate.py
           python3 ./build.py
 
       - name: Setup Pages
