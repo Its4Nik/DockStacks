@@ -15,7 +15,7 @@ pip install -r ./requirements.txt
 
 ./bin/python3 ./build.py
 
-node ./src/createTemplate.js
+./bin/python3 ./src/createTemplate.js
 
 
 if [[ ! "$CI" = "true" ]]; then
