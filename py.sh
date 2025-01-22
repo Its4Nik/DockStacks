@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [[ ! "$CI" = "true" ]]; then
-    $python="./bin/python3"
-    $pip="./bin/pip"
+    python="./bin/python3"
+    pip="./bin/pip"
 else
-    $python="python3"
-    $pip="pip"
+    python="python3"
+    pip="pip"
 fi
 
 echo "
