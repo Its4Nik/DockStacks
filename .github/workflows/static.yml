@@ -27,9 +27,7 @@ jobs:
 
       - name: Setup files
         run: |
-          pip install -r ./requirements.txt
-          python3 ./src/createTemplate.py
-          python3 ./build.py
+          bash py.sh
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
