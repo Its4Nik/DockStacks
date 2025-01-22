@@ -1,25 +1,34 @@
 #!/bin/bash
 
+if [[ ! "$CI" = "true" ]]; then
+    $python="./bin/python3"
+    $pip="./bin/pip"
+else
+    $python="python3"
+    $pip="pip"
+fi
+
 echo "
 ./lib*
 ./bin
 ./include
 " > .gitignore
 
-python3 -m venv ./
+if [[ ! "$CI" = "true" ]]; then
+    python3 -m venv ./
 
+    source ./bin/activate
+fi
 
-source ./bin/activate
+$pip install -r ./requirements.txt
 
-pip install -r ./requirements.txt
+$python ./build.py
 
-./bin/python3 ./build.py
-
-./bin/python3 ./src/createTemplate.js
+$python ./src/createTemplate.py
 
 
 if [[ ! "$CI" = "true" ]]; then
-    python3 -m http.server 8080 -d ./src/
+    $python -m http.server 8080 -d ./src/
 fi
 
 echo "
