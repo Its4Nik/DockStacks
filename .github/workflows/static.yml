@@ -27,7 +27,7 @@ jobs:
 
       - name: Setup files
         run: |
-          bash py.sh
+          python3 ./createTemplate.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
