@@ -1,6 +1,7 @@
 {
   "$schema": "https://its4nik.github.io/DockStacks/schema.json",
   "name": "Nginx",
+  "required_env_vars": [],
   "services": {
     "app": {
       "image": "nginx:latest",
