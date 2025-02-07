@@ -1,0 +1,13 @@
+{
+    "owner": "https://github.com/nextcloud",
+    "source": "https://github.com/nextcloud/all-in-one",
+    "license": {
+        "title": "AGPL-3.0",
+        "link": "https://github.com/nextcloud/all-in-one/blob/main/LICENSE"
+    },
+    "tags": [
+        "Self-Hosting",
+        "Cloud Storage",
+        "Collaboration"
+    ]
+}

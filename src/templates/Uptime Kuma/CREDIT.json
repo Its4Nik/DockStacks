@@ -1,0 +1,13 @@
+{
+    "owner": "https://github.com/louislam",
+    "source": "https://github.com/louislam/uptime-kuma",
+    "license": {
+        "title": "MIT",
+        "link": "https://github.com/louislam/uptime-kuma/blob/master/LICENSE"
+    },
+    "tags": [
+        "Monitoring",
+        "Uptime",
+        "Self-Hosting"
+    ]
+}
