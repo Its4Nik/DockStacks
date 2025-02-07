@@ -30,7 +30,7 @@ There are many ways you can support Dozzle:
 - Blog about Dozzle to spread the word. If you are good at writing send PRs to improve the documentation at [dozzle.dev](https://dozzle.dev/)
 - Sponsor my work at https://www.buymeacoffee.com/amirraminfar
 
-<a href="https://www.buymeacoffee.com/amirraminfar" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+[![Buy me a coffe](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/amirraminfar)
 
 ## Building
 
