@@ -1,0 +1,12 @@
+{
+    "owner": "https://github.com/amir20",
+    "source": "https://github.com/amir20/dozzle",
+    "license": {
+        "title": "MIT",
+        "link": "https://github.com/amir20/dozzle/blob/master/LICENSE"
+    },
+    "tags": [
+        "Logging",
+        "Management"
+    ]
+}
