@@ -40,9 +40,9 @@ Create a `template.json` file with this structure:
 - **`compose_spec`**: Your Docker Compose configuration in JSON format.
 
 ### 3. (Optional) Add an Icon
-- Include an SVG file named `icon.svg` in your template directory.
-- **Requirements**: Square aspect ratio, minimalistic design.
-- *No icon?* The default DockStacks logo will be used.
+- Include an SVG file in your template directory, the name doesn't matter.
+- **Requirements**: Square aspect ratio
+- When no icon is provided a "/" will be shown in the list
 
 ## Example: Nginx Template 🖥️
 
