@@ -18,7 +18,10 @@ for element in $(ls ./templates); do
         icon="None"
     else
         icon="${path}/${icon}"
-        icon="![$element]($icon)"
+
+        #icon="![$element]($icon)"
+        #<img src="image-url" alt="Alt Text" width="300" height="200">
+        icon="<img src=\"$icon\" alt=\"$element\" width=\"200\" height=\"200\">"
     fi
 
     echo "|$icon|$name|[$path](${path}/template.json)" >> README.md

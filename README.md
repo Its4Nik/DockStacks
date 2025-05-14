@@ -7,13 +7,13 @@ Please see [CONTRIBUTE](./CONTRIBUTE.md) for more info on how to add your favori
 ---
 | Icon | Name | Schema |
 |------|------|--------|
-|![adguardhome](./templates/adguardhome/adguard-home.svg)|"AdGuardHome"|[./templates/adguardhome](./templates/adguardhome/template.json)
-|![bookstack](./templates/bookstack/bookstack.svg)|"Bookstack"|[./templates/bookstack](./templates/bookstack/template.json)
-|![gitea](./templates/gitea/gitea.svg)|"Gitea"|[./templates/gitea](./templates/gitea/template.json)
-|![grafana](./templates/grafana/grafana.svg)|"Grafana"|[./templates/grafana](./templates/grafana/template.json)
-|![heimdall](./templates/heimdall/heimdall.svg)|"Heimdall"|[./templates/heimdall](./templates/heimdall/template.json)
-|![nginx-proxy-manager](./templates/nginx-proxy-manager/nginx-proxy-manager.svg)|"Nginx-proxy-manager"|[./templates/nginx-proxy-manager](./templates/nginx-proxy-manager/template.json)
+|<img src="./templates/adguardhome/adguard-home.svg" alt="adguardhome" width="200" height="200">|"AdGuardHome"|[./templates/adguardhome](./templates/adguardhome/template.json)
+|<img src="./templates/bookstack/bookstack.svg" alt="bookstack" width="200" height="200">|"Bookstack"|[./templates/bookstack](./templates/bookstack/template.json)
+|<img src="./templates/gitea/gitea.svg" alt="gitea" width="200" height="200">|"Gitea"|[./templates/gitea](./templates/gitea/template.json)
+|<img src="./templates/grafana/grafana.svg" alt="grafana" width="200" height="200">|"Grafana"|[./templates/grafana](./templates/grafana/template.json)
+|<img src="./templates/heimdall/heimdall.svg" alt="heimdall" width="200" height="200">|"Heimdall"|[./templates/heimdall](./templates/heimdall/template.json)
+|<img src="./templates/nginx-proxy-manager/nginx-proxy-manager.svg" alt="nginx-proxy-manager" width="200" height="200">|"Nginx-proxy-manager"|[./templates/nginx-proxy-manager](./templates/nginx-proxy-manager/template.json)
 |None|"PiHole"|[./templates/pihole](./templates/pihole/template.json)
 |None|"qCDN"|[./templates/qcdn](./templates/qcdn/template.json)
-|![tianji](./templates/tianji/tianji.svg)|"Tianji"|[./templates/tianji](./templates/tianji/template.json)
-|![uptime-kuma](./templates/uptime-kuma/uptime-kuma.svg)|"Uptime-Kuma"|[./templates/uptime-kuma](./templates/uptime-kuma/template.json)
+|<img src="./templates/tianji/tianji.svg" alt="tianji" width="200" height="200">|"Tianji"|[./templates/tianji](./templates/tianji/template.json)
+|<img src="./templates/uptime-kuma/uptime-kuma.svg" alt="uptime-kuma" width="200" height="200">|"Uptime-Kuma"|[./templates/uptime-kuma](./templates/uptime-kuma/template.json)
