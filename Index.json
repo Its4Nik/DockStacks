@@ -1,0 +1,62 @@
+[
+	{
+		"name": "AdGuardHome",
+		"path": "templates/adguardhome/template.json",
+		"version": "1",
+		"source": "https://github.com/Its4Nik/DockStacks"
+	},
+	{
+		"name": "Bookstack",
+		"path": "templates/bookstack/template.json",
+		"version": "1",
+		"source": "https://github.com/Its4Nik/DockStacks"
+	},
+	{
+		"name": "Gitea",
+		"path": "templates/gitea/template.json",
+		"version": "1",
+		"source": "https://github.com/Its4Nik/DockStacks"
+	},
+	{
+		"name": "Grafana",
+		"path": "templates/grafana/template.json",
+		"version": "1",
+		"source": "https://github.com/Its4Nik/DockStacks"
+	},
+	{
+		"name": "Heimdall",
+		"path": "templates/heimdall/template.json",
+		"version": "1",
+		"source": "https://github.com/Its4Nik/DockStacks"
+	},
+	{
+		"name": "Nginx-proxy-manager",
+		"path": "templates/nginx-proxy-manager/template.json",
+		"version": "1",
+		"source": "https://github.com/Its4Nik/DockStacks"
+	},
+	{
+		"name": "PiHole",
+		"path": "templates/pihole/template.json",
+		"version": "1",
+		"source": "https://github.com/Its4Nik/DockStacks"
+	},
+	{
+		"name": "qCDN",
+		"path": "templates/qcdn/template.json",
+		"version": "1",
+		"source": "https://github.com/Its4Nik/DockStacks"
+	},
+	{
+		"name": "Tianji",
+		"path": "templates/tianji/template.json",
+		"version": "1",
+		"source": "https://github.com/Its4Nik/DockStacks"
+	},
+	{
+		"name": "Uptime-Kuma",
+		"path": "templates/uptime-kuma/template.json",
+		"version": "1",
+		"source": "https://github.com/Its4Nik/DockStacks"
+	}
+]
