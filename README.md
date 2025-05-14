@@ -19,6 +19,9 @@
 3. **Contribute**: Share your Docker setups by following our [contribution guide](./CONTRIBUTE.md).
 
 ---
+
+## Available Stacks
+
 | Icon | Name | Schema |
 |------|------|--------|
 |<img src="./templates/adguardhome/adguard-home.svg" alt="adguardhome" width="50" height="50">|AdGuardHome|[AdGuardHome](./templates/adguardhome/template.json)
