@@ -12,17 +12,17 @@ for element in $(ls ./templates); do
     # 3. Schema
     path="./templates/${element}"
     icon="$(ls "${path}" | grep ".svg" | tr -d '[:space:]')"
-    name="$(cat "${path}/template.json" | jq ".name")"
+    name="$(cat "${path}/template.json" | jq ".name" | tr -d '"')"
 
     if [[ -z $icon ]]; then
-        icon="None"
+        icon="/"
     else
         icon="${path}/${icon}"
 
-        #icon="![$element]($icon)"
-        #<img src="image-url" alt="Alt Text" width="300" height="200">
         icon="<img src=\"$icon\" alt=\"$element\" width=\"50\" height=\"50\">"
     fi
 
-    echo "|$icon|$name|[$path](${path}/template.json)" >> README.md
+    echo "|$icon|$name|[$name](${path}/template.json)" >> README.md
 done
+
+cat "./.github/README_footer.md" >> README.md
