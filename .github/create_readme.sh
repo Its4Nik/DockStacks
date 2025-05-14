@@ -12,14 +12,13 @@ for element in $(ls ./templates); do
     # 2. Name
     # 3. Schema
     path="./templates/${element}"
-    icon="$(ls "${path}" | grep ".svg" | tr -d '[:space:]')"
+    icon="$(ls "${path}" | grep ".svg\|.png" | tr -d '[:space:]')"
     name="$(cat "${path}/template.json" | jq ".name" | tr -d '"')"
 
     if [[ -z $icon ]]; then
         icon="/"
     else
         icon="${path}/${icon}"
-
         icon="<img src=\"$icon\" alt=\"$element\" width=\"50\" height=\"50\">"
     fi
 
