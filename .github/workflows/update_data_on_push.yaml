@@ -1,5 +1,9 @@
 on: push
 
+permissions:
+  contents: write
+  actions: write
+
 jobs:
   update-files:
     name: "Generate new files"
