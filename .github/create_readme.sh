@@ -2,6 +2,7 @@
 cat ./.github/DockStacks_README.md > README.md
 
 {
+    echo -e "\n## Available Stacks\n"
     echo "| Icon | Name | Schema |"
     echo "|------|------|--------|"
 } >> README.md
