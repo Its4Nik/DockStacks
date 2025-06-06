@@ -1,70 +1,70 @@
 [
 	{
 		"name": "AdGuardHome",
-		"icon": adguard-home.svg,
+		"icon": "./templates/adguardhome/adguard-home.svg",
 		"path": "templates/adguardhome/template.json",
 		"version": "1",
 		"source": "https://github.com/Its4Nik/DockStacks"
 	},
 	{
 		"name": "Bookstack",
-		"icon": bookstack.svg,
+		"icon": "./templates/bookstack/bookstack.svg",
 		"path": "templates/bookstack/template.json",
 		"version": "1",
 		"source": "https://github.com/Its4Nik/DockStacks"
 	},
 	{
 		"name": "Gitea",
-		"icon": gitea.svg,
+		"icon": "./templates/gitea/gitea.svg",
 		"path": "templates/gitea/template.json",
 		"version": "1",
 		"source": "https://github.com/Its4Nik/DockStacks"
 	},
 	{
 		"name": "Grafana",
-		"icon": grafana.svg,
+		"icon": "./templates/grafana/grafana.svg",
 		"path": "templates/grafana/template.json",
 		"version": "1",
 		"source": "https://github.com/Its4Nik/DockStacks"
 	},
 	{
 		"name": "Heimdall",
-		"icon": heimdall.svg,
+		"icon": "./templates/heimdall/heimdall.svg",
 		"path": "templates/heimdall/template.json",
 		"version": "1",
 		"source": "https://github.com/Its4Nik/DockStacks"
 	},
 	{
 		"name": "Nginx-proxy-manager",
-		"icon": nginx-proxy-manager.svg,
+		"icon": "./templates/nginx-proxy-manager/nginx-proxy-manager.svg",
 		"path": "templates/nginx-proxy-manager/template.json",
 		"version": "1",
 		"source": "https://github.com/Its4Nik/DockStacks"
 	},
 	{
 		"name": "PiHole",
-		"icon": ,
+		"icon": "./templates/pihole/",
 		"path": "templates/pihole/template.json",
 		"version": "1",
 		"source": "https://github.com/Its4Nik/DockStacks"
 	},
 	{
 		"name": "qCDN",
-		"icon": ,
+		"icon": "./templates/qcdn/",
 		"path": "templates/qcdn/template.json",
 		"version": "1",
 		"source": "https://github.com/Its4Nik/DockStacks"
 	},
 	{
 		"name": "Tianji",
-		"icon": tianji.svg,
+		"icon": "./templates/tianji/tianji.svg",
 		"path": "templates/tianji/template.json",
 		"version": "1",
 		"source": "https://github.com/Its4Nik/DockStacks"
 	},
 	{
 		"name": "Uptime-Kuma",
-		"icon": uptime-kuma.svg,
+		"icon": "./templates/uptime-kuma/uptime-kuma.svg",
 		"path": "templates/uptime-kuma/template.json",
 		"version": "1",
 		"source": "https://github.com/Its4Nik/DockStacks"
