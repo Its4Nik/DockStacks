@@ -7,7 +7,7 @@ echo "[" > Index.json
 
 for element in $(ls ./templates); do
     let "count = count + 1"
-    icon="./templates/${element}/$(ls "./templates/${element}" | grep ".svg\|.png" | tr -d '[:space:]')"
+    icon="templates/${element}/$(ls "./templates/${element}" | grep ".svg\|.png" | tr -d '[:space:]')"
     data="$(cat ./templates/${element}/template.json)"
     name="$(echo "$data" | jq '.name')"
     version="$(echo "$data" | jq '.version')"
