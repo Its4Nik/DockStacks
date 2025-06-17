@@ -35,6 +35,13 @@
 		"source": "https://github.com/Its4Nik/DockStacks"
 	},
 	{
+		"name": "Home Assistant",
+		"icon": "",
+		"path": "templates/homeassistant/template.json",
+		"version": "1",
+		"source": "https://github.com/home-assistant/core"
+	},
+	{
 		"name": "Nginx-proxy-manager",
 		"icon": "nginx-proxy-manager.svg",
 		"path": "templates/nginx-proxy-manager/template.json",
