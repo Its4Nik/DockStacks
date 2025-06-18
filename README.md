@@ -29,7 +29,7 @@
 |<img src="./templates/gitea/gitea.svg" alt="gitea" width="50" height="50">|Gitea|[Gitea](./templates/gitea/template.json)
 |<img src="./templates/grafana/grafana.svg" alt="grafana" width="50" height="50">|Grafana|[Grafana](./templates/grafana/template.json)
 |<img src="./templates/heimdall/heimdall.svg" alt="heimdall" width="50" height="50">|Heimdall|[Heimdall](./templates/heimdall/template.json)
-|/|Home Assistant|[Home Assistant](./templates/homeassistant/template.json)
+|/|Home Assistant|[Home Assistant](./templates/home-assistant/template.json)
 |<img src="./templates/nginx-proxy-manager/nginx-proxy-manager.svg" alt="nginx-proxy-manager" width="50" height="50">|Nginx-proxy-manager|[Nginx-proxy-manager](./templates/nginx-proxy-manager/template.json)
 |/|PiHole|[PiHole](./templates/pihole/template.json)
 |/|qCDN|[qCDN](./templates/qcdn/template.json)

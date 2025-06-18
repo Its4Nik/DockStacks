@@ -37,7 +37,7 @@
 	{
 		"name": "Home Assistant",
 		"icon": "",
-		"path": "templates/homeassistant/template.json",
+		"path": "templates/home-assistant/template.json",
 		"version": "1",
 		"source": "https://github.com/home-assistant/core"
 	},
