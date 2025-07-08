@@ -50,7 +50,7 @@ count=0
 processed=0
 
 for tmpl in "${templates[@]}"; do
-  ((count++))
+  let "count = count + 1"
   element=$(basename "$tmpl")
   log "--------------------------------------------"
   log "Processing #$count/$total => $tmpl"
@@ -105,7 +105,7 @@ for tmpl in "${templates[@]}"; do
   fi
 
   # Add comma if not the first processed entry
-  (( processed > 0 )) && echo "," >> "$temp_file"
+  (( processed > 0 )) && echo -n "," >> "$temp_file"
 
   # emit object
   log "Emitting JSON object for $element"
@@ -123,7 +123,7 @@ for tmpl in "${templates[@]}"; do
       source: $source
     }' >> "$temp_file"
 
-  ((processed++))
+  let "processed = processed + 1"
 done
 
 log "Writing array end"
@@ -131,7 +131,7 @@ echo "]" >> "$temp_file"
 
 # Validate the JSON before moving to final location
 if jq empty "$temp_file" >/dev/null 2>&1; then
-  mv "$temp_file" "$INDEX_FILE"
+  jq . "$temp_file" > "$INDEX_FILE"
   log "DONE — $INDEX_FILE written successfully with $processed entries!"
 else
   error "Generated JSON is invalid. Aborting."
