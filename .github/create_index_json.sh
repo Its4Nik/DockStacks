@@ -34,7 +34,7 @@ echo "[DEBUG] Generating $INDEX_FILE..."
 # start the JSON array
 {
   echo "[DEBUG] Writing array start"
-  echo "["
+  echo "[" > $INDEX_FILE
   count=0
 
   for tmpl in "${templates[@]}"; do
@@ -104,12 +104,12 @@ echo "[DEBUG] Generating $INDEX_FILE..."
     "version": "$version",
     "source": "$source_url"
   }$( [[ $count -lt $total ]] && echo "," )
-EOF
+EOF >> $INDEX_FILE
 
   done
 
   echo "[DEBUG] Writing array end"
-  echo "]"
-} > "$INDEX_FILE"
+  echo "]" >> $INDEX_FILE
+}
 
 echo "[DEBUG] DONE — $INDEX_FILE written successfully!"
