@@ -12,9 +12,14 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v4
 
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
       - name: "Create Index.json"
         run: |
-          bash .github/create_index_json.sh
+          cd .generator
+          bun run convert.ts
 
       - name: "Create README.md"
         run: |

@@ -1,0 +1,210 @@
+#!/usr/bin/env bun
+import { join } from "path";
+import { $ } from "bun";
+
+const GITHUB_RAW =
+  "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main";
+
+type TemplateEntry = {
+  name: string;
+  icon: string;
+  path: string;
+  version: string;
+  source: string;
+};
+
+type ThemeEntry = {
+  name: string;
+  icon: string;
+  themeVersion: string;
+  cssFile: string;
+  owner: string;
+};
+
+async function loadTemplates(): Promise<TemplateEntry[]> {
+  console.debug("📦 Loading templates…");
+  const out: TemplateEntry[] = [];
+  const templateDirs = (await $`ls ../templates`.text()).split("\n");
+
+  for await (const dir of templateDirs) {
+    if (!dir) continue;
+    console.debug("");
+    console.debug(`🔹 Processing template directory: ${dir}`);
+    const tplDir = join("../templates", dir);
+    const tplJsonPath = join(tplDir, "template.json");
+
+    try {
+      const raw = await Bun.file(tplJsonPath).text();
+      const { name, version, source } = JSON.parse(raw) as {
+        name: string;
+        version: number | string;
+        source: string;
+      };
+      console.debug(
+        `  🧾 Parsed template: name=${name}, version=${version}, source=${source}`,
+      );
+
+      let iconFile: string;
+      try {
+        iconFile = (await $`ls ${tplDir} | grep "svg\|png"`.text()) ?? "";
+
+        iconFile = iconFile.replaceAll("\n", "");
+        iconFile = `${GITHUB_RAW}/templates/${dir}/${iconFile}`;
+        console.debug(`  🖼️ Found icon: ${iconFile}`);
+      } catch (shellErr) {
+        const shellMessage =
+          shellErr instanceof Error ? shellErr.message : String(shellErr);
+        console.debug(`  ℹ️ No icon found in "${dir}", setting default`);
+        iconFile = "";
+      }
+
+      out.push({
+        name,
+        icon: iconFile,
+        path: `${GITHUB_RAW}/templates/${dir}/template.json`,
+        version: String(version),
+        source,
+      });
+    } catch (err) {
+      const errMsg = err instanceof Error ? err.message : String(err);
+      console.warn(`  ⚠️ Skipping template “${dir}”: ${errMsg}`);
+    }
+  }
+
+  console.debug(`✅ Loaded ${out.length} templates`);
+  return out;
+}
+
+async function loadThemes(): Promise<ThemeEntry[]> {
+  console.debug("🎨 Loading themes…");
+  const out: ThemeEntry[] = [];
+  for await (const dir of (await $`ls ../themes`.text()).split("\n")) {
+    if (!dir) continue;
+    console.debug(`🔹 Processing theme directory: ${dir}`);
+    const themeDir = join("../themes", dir);
+    const cssPath = join(themeDir, "theme.css");
+    try {
+      const css = await Bun.file(cssPath).text();
+      console.debug(`  📄 Loaded CSS from ${cssPath}`);
+
+      const nameMatch = css.match(/@name\s+(.+?)\s*\*\//);
+      const versionMatch = css.match(/@version\s+(.+?)\s*\*\//);
+      const ownerMatch = css.match(/@owner\s+(.+?)\s*\*\//);
+      if (!nameMatch || !versionMatch || !ownerMatch) {
+        throw new Error("Missing @name, @version or @owner in CSS");
+      }
+
+      let iconFile: string;
+      try {
+        iconFile = (await $`ls ${dir} | grep "svg\|png"`.text()) ?? "";
+
+        iconFile = iconFile.replaceAll("\n", "");
+        iconFile = `${GITHUB_RAW}/themes/${dir}/${iconFile}`;
+        console.debug(`  🖼️ Found icon: ${iconFile}`);
+      } catch (shellErr) {
+        const shellMessage =
+          shellErr instanceof Error ? shellErr.message : String(shellErr);
+        console.debug(`  ℹ️ No icon found in "${dir}", setting default`);
+        iconFile = "";
+      }
+      console.debug(`  🖼️ Theme icon: ${iconFile || "None"}`);
+
+      out.push({
+        name: dir,
+        icon: iconFile || "",
+        themeVersion: versionMatch[1].trim(),
+        cssFile: `${GITHUB_RAW}/themes/${dir}/theme.css`,
+        owner: ownerMatch[1].trim(),
+      });
+    } catch (err) {
+      console.warn("  ⚠️ Skipping theme “%s”: %s", dir, err.message);
+    }
+  }
+  console.debug(`✅ Loaded ${out.length} themes`);
+  return out;
+}
+
+async function generateReadme(
+  templates: TemplateEntry[],
+  themes: ThemeEntry[],
+) {
+  const header = `# DockStacks 🐳
+
+![DockStacks Logo](./.github/DockStat.png)
+
+**DockStacks** is a curated repository of Docker Compose templates for popular applications. Simplify your deployments with ready-to-use stacks!
+
+---
+
+## Features ✨
+
+- **Pre-built Templates**: Quickly deploy apps like Nginx, PostgreSQL, or WordPress.
+- **Community-Driven**: Submit your own stacks or improve existing ones.
+- **Easy Integration**: Compatible with DockStat and DockStatAPI.
+
+## Getting Started 🚀
+
+1. **Browse Templates**: Explore the [templates](./templates) directory.
+2. **Deploy**: Use a DockStat or another tool to deploy your chosen stack.
+3. **Contribute**: Share your Docker setups by following our [contribution guide](./CONTRIBUTE.md).
+
+---
+
+## Templates 📦
+
+| Icon | Name | Version | Source |
+|------|------|---------|--------|
+${templates
+  .map(
+    (t) =>
+      `| ![icon](${t.icon || "No Icon available"}) | ${t.name} | ${t.version} | [Source](${t.source}) |`,
+  )
+  .join("\n")}
+
+---
+
+## Themes 🎨
+
+| Icon | Name | Version | Owner |
+|------|------|---------|-------|
+${themes
+  .map(
+    (t) =>
+      `| ![icon](${t.icon || "No Icon available"}) | ${t.name} | ${t.themeVersion} | ${t.owner} |`,
+  )
+  .join("\n")}
+
+---
+
+## Contributing 🙌
+
+We welcome community templates! Learn how to add yours in the [CONTRIBUTE.md](./CONTRIBUTE.md) guide.
+
+---
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+`;
+
+  await Bun.write("../README.md", header);
+  console.log("📘 Generated README.md with templates and themes table.");
+}
+
+async function main() {
+  console.log("⏳ Building Index.json and README…");
+  const [templates, themes] = await Promise.all([
+    loadTemplates(),
+    loadThemes(),
+  ]);
+
+  const index = { templates, themes };
+
+  await Bun.write("../Index.json", JSON.stringify(index, null, 2));
+  console.log("✅ Wrote Index.json");
+
+  await generateReadme(templates, themes);
+}
+
+main().catch((err) => {
+  console.error("❌ Unhandled error:", err);
+  process.exit(1);
+});
