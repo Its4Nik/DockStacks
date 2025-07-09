@@ -16,14 +16,10 @@ jobs:
         with:
           bun-version: latest
 
-      - name: "Create Index.json"
+      - name: "Update Index and ReadMe"
         run: |
           cd .generator
           bun run convert.ts
-
-      - name: "Create README.md"
-        run: |
-          bash .github/create_readme.sh
 
       - name: "Push changes"
         run: |
