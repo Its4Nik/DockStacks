@@ -1,0 +1,16 @@
+/* @name Soft Blue */
+/* @version 1 */
+/* @owner Its4Nik */
+
+/* Light navy theme with bright blue accents */
+
+.root,
+#root,
+#docs-root {
+    --accent: #60a5fa;
+    --secondary-accent: #93c5fd;
+    --border: #374151;
+    --muted-bg: #0f172a;
+    --gradient-from: #1e293b;
+    --gradient-to: #0f172a;
+}

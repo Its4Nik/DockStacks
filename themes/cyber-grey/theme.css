@@ -1,0 +1,16 @@
+/* @name Cyber Gray */
+/* @version 1 */
+/* @owner Its4Nik */
+
+/* A calm lavender-teal theme with soft dark tones */
+
+.root,
+#root,
+#docs-root {
+    --accent: #a5b4fc;
+    --secondary-accent: #6ee7b7;
+    --border: #4b5563;
+    --muted-bg: #1e1b2e;
+    --gradient-from: #2c2a3e;
+    --gradient-to: #181826;
+}

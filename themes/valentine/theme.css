@@ -1,0 +1,18 @@
+/* @name Valentine */
+/* @version 1 */
+/* @owner Its4Nik */
+
+/* !!! LIGHT THEMES NEED FIXING */
+
+/* Cheerful pastel pink theme with a soft floral touch, adapted for dark mode */
+
+.root,
+#root,
+#docs-root {
+    --accent: #f9a8d4;
+    --secondary-accent: #fbcfe8;
+    --border: #e5a3be;
+    --muted-bg: #fbeff3;
+    --gradient-from: #f8dbe2;
+    --gradient-to: #f6e3eb;
+}

@@ -1,0 +1,16 @@
+/* @name DockStat Matrix Green */
+/* @version 1 */
+/* @owner Its4Nik */
+
+/* Hacker-inspired green on black interface */
+
+.root,
+#root,
+#docs-root {
+    --accent: #10b981;
+    --secondary-accent: #6ee7b7;
+    --border: #334155;
+    --muted-bg: #0a0f0d;
+    --gradient-from: #0f1a14;
+    --gradient-to: #050b08;
+}

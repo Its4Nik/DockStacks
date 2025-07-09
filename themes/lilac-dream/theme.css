@@ -1,0 +1,18 @@
+/* @name Lilac Dream */
+/* @version 1 */
+/* @owner Its4Nik */
+
+/* !!! LIGHT THEMES NEED FIXING */
+
+/* Gentle purples and lavenders for a dreamy soft UI */
+
+.root,
+#root,
+#docs-root {
+    --accent: #c4b5fd;
+    --secondary-accent: #ddd6fe;
+    --border: #a78bfa;
+    --muted-bg: #f5f3ff;
+    --gradient-from: #ede9fe;
+    --gradient-to: #e0e7ff;
+}

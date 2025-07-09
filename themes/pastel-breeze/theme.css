@@ -1,0 +1,18 @@
+/* @name Pastel Breeze */
+/* @version 1 */
+/* @owner Its4Nik */
+
+/* !!! LIGHT THEMES NEED FIXING */
+
+/* Light and airy pastel blue with soft teal and grey highlights */
+
+.root,
+#root,
+#docs-root {
+    --accent: #7dd3fc;
+    --secondary-accent: #bae6fd;
+    --border: #cbd5e1;
+    --muted-bg: #f0f9ff;
+    --gradient-from: #dbeafe;
+    --gradient-to: #e0f2fe;
+}
