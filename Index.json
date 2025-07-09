@@ -1,9 +1,23 @@
 {
   "templates": [
     {
-      "name": "AdGuardHome",
-      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/adguardhome/adguard-home.svg",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/adguardhome/template.json",
+      "name": "Grafana",
+      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/grafana/grafana.svg",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/grafana/template.json",
+      "version": "1",
+      "source": "https://github.com/Its4Nik/DockStacks"
+    },
+    {
+      "name": "Nginx-proxy-manager",
+      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/nginx-proxy-manager/nginx-proxy-manager.svg",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/nginx-proxy-manager/template.json",
+      "version": "1",
+      "source": "https://github.com/Its4Nik/DockStacks"
+    },
+    {
+      "name": "Outline",
+      "icon": "",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/outline/template.json",
       "version": "1",
       "source": "https://github.com/Its4Nik/DockStacks"
     },
@@ -15,16 +29,16 @@
       "source": "https://github.com/Its4Nik/DockStacks"
     },
     {
-      "name": "Gitea",
-      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/gitea/gitea.svg",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/gitea/template.json",
+      "name": "AdGuardHome",
+      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/adguardhome/adguard-home.svg",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/adguardhome/template.json",
       "version": "1",
       "source": "https://github.com/Its4Nik/DockStacks"
     },
     {
-      "name": "Grafana",
-      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/grafana/grafana.svg",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/grafana/template.json",
+      "name": "Uptime-Kuma",
+      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/uptime-kuma.svg",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/template.json",
       "version": "1",
       "source": "https://github.com/Its4Nik/DockStacks"
     },
@@ -36,23 +50,9 @@
       "source": "https://github.com/Its4Nik/DockStacks"
     },
     {
-      "name": "Home Assistant",
-      "icon": "",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/home-assistant/template.json",
-      "version": "1",
-      "source": "https://github.com/home-assistant/core"
-    },
-    {
-      "name": "Nginx-proxy-manager",
-      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/nginx-proxy-manager/nginx-proxy-manager.svg",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/nginx-proxy-manager/template.json",
-      "version": "1",
-      "source": "https://github.com/Its4Nik/DockStacks"
-    },
-    {
-      "name": "PiHole",
-      "icon": "",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/pihole/template.json",
+      "name": "Gitea",
+      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/gitea/gitea.svg",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/gitea/template.json",
       "version": "1",
       "source": "https://github.com/Its4Nik/DockStacks"
     },
@@ -71,16 +71,16 @@
       "source": "https://github.com/Its4Nik/DockStacks"
     },
     {
-      "name": "Uptime-Kuma",
-      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/uptime-kuma.svg",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/template.json",
+      "name": "Home Assistant",
+      "icon": "",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/home-assistant/template.json",
       "version": "1",
-      "source": "https://github.com/Its4Nik/DockStacks"
+      "source": "https://github.com/home-assistant/core"
     },
     {
-      "name": "Outline",
+      "name": "PiHole",
       "icon": "",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/outline/template.json",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/pihole/template.json",
       "version": "1",
       "source": "https://github.com/Its4Nik/DockStacks"
     }

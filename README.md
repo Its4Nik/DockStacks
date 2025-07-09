@@ -24,18 +24,18 @@
 
 | Icon | Name | Version | Source |
 |------|------|---------|--------|
-| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/adguardhome/adguard-home.svg) | AdGuardHome | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/bookstack/bookstack.svg) | Bookstack | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/gitea/gitea.svg) | Gitea | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
 | ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/grafana/grafana.svg) | Grafana | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/heimdall/heimdall.svg) | Heimdall | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](No Icon available) | Home Assistant | 1 | [Source](https://github.com/home-assistant/core) |
 | ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/nginx-proxy-manager/nginx-proxy-manager.svg) | Nginx-proxy-manager | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](No Icon available) | PiHole | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](No Icon available) | Outline | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/bookstack/bookstack.svg) | Bookstack | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/adguardhome/adguard-home.svg) | AdGuardHome | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/uptime-kuma.svg) | Uptime-Kuma | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/heimdall/heimdall.svg) | Heimdall | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/gitea/gitea.svg) | Gitea | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
 | ![icon](No Icon available) | qCDN | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
 | ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/tianji/tianji.svg) | Tianji | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/uptime-kuma.svg) | Uptime-Kuma | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](No Icon available) | Outline | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](No Icon available) | Home Assistant | 1 | [Source](https://github.com/home-assistant/core) |
+| ![icon](No Icon available) | PiHole | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
 
 ---
 
