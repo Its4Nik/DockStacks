@@ -7,7 +7,7 @@
     "@types/bun": "latest"
   },
   "scripts": {
-    "build": "bun run convert.ts"
+    "make": "cd .generator && bun run convert.ts"
   },
   "peerDependencies": {
     "typescript": "^5"
