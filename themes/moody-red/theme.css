@@ -9,6 +9,9 @@
 #docs-root {
     --accent: #fca5a5;
     --secondary-accent: #fdba74;
+    --text-primary: #f5e0e0;
+    --text-secondary: #d9b8b8;
+    --text-muted: #a77d7d;
     --border: #4b2e2e;
     --muted-bg: #1f1a24;
     --gradient-from: #3b1f2b;
