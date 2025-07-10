@@ -87,10 +87,66 @@
   ],
   "themes": [
     {
-      "name": "DockStat-dark",
+      "name": "default",
       "icon": "",
       "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/DockStat-dark/theme.css",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/default/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "pastel-breeze",
+      "icon": "",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/pastel-breeze/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "cyber-grey",
+      "icon": "",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/cyber-grey/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "moody-red",
+      "icon": "",
+      "themeVersion": "2",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/moody-red/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "lilac-dream",
+      "icon": "",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/lilac-dream/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "blush-mist",
+      "icon": "",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/blush-mist/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "soft-blue",
+      "icon": "",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/soft-blue/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "matrix-green",
+      "icon": "",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/matrix-green/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "valentine",
+      "icon": "",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/valentine/theme.css",
       "owner": "Its4Nik"
     }
   ]

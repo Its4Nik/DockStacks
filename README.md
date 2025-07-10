@@ -43,7 +43,15 @@
 
 | Icon | Name | Version | Owner |
 |------|------|---------|-------|
-| ![icon](No Icon available) | DockStat-dark | 1 | Its4Nik |
+| ![icon](No Icon available) | default | 1 | Its4Nik |
+| ![icon](No Icon available) | pastel-breeze | 1 | Its4Nik |
+| ![icon](No Icon available) | cyber-grey | 1 | Its4Nik |
+| ![icon](No Icon available) | moody-red | 2 | Its4Nik |
+| ![icon](No Icon available) | lilac-dream | 1 | Its4Nik |
+| ![icon](No Icon available) | blush-mist | 1 | Its4Nik |
+| ![icon](No Icon available) | soft-blue | 1 | Its4Nik |
+| ![icon](No Icon available) | matrix-green | 1 | Its4Nik |
+| ![icon](No Icon available) | valentine | 1 | Its4Nik |
 
 ---
 
