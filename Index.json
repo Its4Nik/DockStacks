@@ -1,23 +1,9 @@
 {
   "templates": [
     {
-      "name": "Grafana",
-      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/grafana/grafana.svg",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/grafana/template.json",
-      "version": "1",
-      "source": "https://github.com/Its4Nik/DockStacks"
-    },
-    {
-      "name": "Nginx-proxy-manager",
-      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/nginx-proxy-manager/nginx-proxy-manager.svg",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/nginx-proxy-manager/template.json",
-      "version": "1",
-      "source": "https://github.com/Its4Nik/DockStacks"
-    },
-    {
-      "name": "Outline",
-      "icon": "",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/outline/template.json",
+      "name": "AdGuardHome",
+      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/adguardhome/adguard-home.svg",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/adguardhome/template.json",
       "version": "1",
       "source": "https://github.com/Its4Nik/DockStacks"
     },
@@ -29,16 +15,16 @@
       "source": "https://github.com/Its4Nik/DockStacks"
     },
     {
-      "name": "AdGuardHome",
-      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/adguardhome/adguard-home.svg",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/adguardhome/template.json",
+      "name": "Gitea",
+      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/gitea/gitea.svg",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/gitea/template.json",
       "version": "1",
       "source": "https://github.com/Its4Nik/DockStacks"
     },
     {
-      "name": "Uptime-Kuma",
-      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/uptime-kuma.svg",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/template.json",
+      "name": "Grafana",
+      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/grafana/grafana.svg",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/grafana/template.json",
       "version": "1",
       "source": "https://github.com/Its4Nik/DockStacks"
     },
@@ -50,9 +36,23 @@
       "source": "https://github.com/Its4Nik/DockStacks"
     },
     {
-      "name": "Gitea",
-      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/gitea/gitea.svg",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/gitea/template.json",
+      "name": "Home Assistant",
+      "icon": "",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/home-assistant/template.json",
+      "version": "1",
+      "source": "https://github.com/home-assistant/core"
+    },
+    {
+      "name": "Nginx-proxy-manager",
+      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/nginx-proxy-manager/nginx-proxy-manager.svg",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/nginx-proxy-manager/template.json",
+      "version": "1",
+      "source": "https://github.com/Its4Nik/DockStacks"
+    },
+    {
+      "name": "PiHole",
+      "icon": "",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/pihole/template.json",
       "version": "1",
       "source": "https://github.com/Its4Nik/DockStacks"
     },
@@ -71,16 +71,16 @@
       "source": "https://github.com/Its4Nik/DockStacks"
     },
     {
-      "name": "Home Assistant",
-      "icon": "",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/home-assistant/template.json",
+      "name": "Uptime-Kuma",
+      "icon": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/uptime-kuma.svg",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/template.json",
       "version": "1",
-      "source": "https://github.com/home-assistant/core"
+      "source": "https://github.com/Its4Nik/DockStacks"
     },
     {
-      "name": "PiHole",
+      "name": "Outline",
       "icon": "",
-      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/pihole/template.json",
+      "path": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/outline/template.json",
       "version": "1",
       "source": "https://github.com/Its4Nik/DockStacks"
     }
@@ -88,65 +88,65 @@
   "themes": [
     {
       "name": "default",
-      "icon": "",
+      "icon": "#818cf9",
       "themeVersion": "1",
       "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/default/theme.css",
       "owner": "Its4Nik"
     },
     {
-      "name": "pastel-breeze",
-      "icon": "",
-      "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/pastel-breeze/theme.css",
-      "owner": "Its4Nik"
-    },
-    {
-      "name": "cyber-grey",
-      "icon": "",
-      "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/cyber-grey/theme.css",
-      "owner": "Its4Nik"
-    },
-    {
-      "name": "moody-red",
-      "icon": "",
-      "themeVersion": "2",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/moody-red/theme.css",
-      "owner": "Its4Nik"
-    },
-    {
-      "name": "lilac-dream",
-      "icon": "",
-      "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/lilac-dream/theme.css",
-      "owner": "Its4Nik"
-    },
-    {
-      "name": "blush-mist",
-      "icon": "",
-      "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/blush-mist/theme.css",
-      "owner": "Its4Nik"
-    },
-    {
-      "name": "soft-blue",
-      "icon": "",
-      "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/soft-blue/theme.css",
-      "owner": "Its4Nik"
-    },
-    {
       "name": "matrix-green",
-      "icon": "",
+      "icon": "#10b981",
       "themeVersion": "1",
       "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/matrix-green/theme.css",
       "owner": "Its4Nik"
     },
     {
+      "name": "soft-blue",
+      "icon": "#60a5fa",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/soft-blue/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "pastel-breeze",
+      "icon": "#7dd3fc",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/pastel-breeze/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "lilac-dream",
+      "icon": "#c4b5fd",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/lilac-dream/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "moody-red",
+      "icon": "#fca5a5",
+      "themeVersion": "2",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/moody-red/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "cyber-grey",
+      "icon": "#a5b4fc",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/cyber-grey/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
       "name": "valentine",
-      "icon": "",
+      "icon": "#f9a8d4",
       "themeVersion": "1",
       "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/valentine/theme.css",
+      "owner": "Its4Nik"
+    },
+    {
+      "name": "bubblegrunge",
+      "icon": "#f9a8d4",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/bubblegrunge/theme.css",
       "owner": "Its4Nik"
     }
   ]

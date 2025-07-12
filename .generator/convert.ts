@@ -54,7 +54,9 @@ async function loadTemplates(): Promise<TemplateEntry[]> {
       } catch (shellErr) {
         const shellMessage =
           shellErr instanceof Error ? shellErr.message : String(shellErr);
-        console.debug(`  ℹ️ No icon found in "${dir}", setting default`);
+        console.debug(
+          `  ℹ️ No icon found in "${dir}", setting default; ${shellMessage}`,
+        );
         iconFile = "";
       }
 
@@ -94,24 +96,27 @@ async function loadThemes(): Promise<ThemeEntry[]> {
         throw new Error("Missing @name, @version or @owner in CSS");
       }
 
-      let iconFile: string;
+      let iconColor: string;
       try {
-        iconFile = (await $`ls ${dir} | grep "svg\|png"`.text()) ?? "";
-
-        iconFile = iconFile.replaceAll("\n", "");
-        iconFile = `${GITHUB_RAW}/themes/${dir}/${iconFile}`;
-        console.debug(`  🖼️ Found icon: ${iconFile}`);
+        const accentMatch = css.match(/#[0-9a-fA-F]{6}/);
+        if (!accentMatch) {
+          throw new Error("Could not find accent color in CSS");
+        }
+        iconColor = accentMatch[0];
       } catch (shellErr) {
         const shellMessage =
           shellErr instanceof Error ? shellErr.message : String(shellErr);
-        console.debug(`  ℹ️ No icon found in "${dir}", setting default`);
-        iconFile = "";
+        console.debug(
+          `  ℹ️ No accent color found in "${dir}", setting default; ${shellMessage}`,
+        );
+        iconColor = "";
       }
-      console.debug(`  🖼️ Theme icon: ${iconFile || "None"}`);
+
+      console.debug(`  🖼️ Theme icon color: ${iconColor || "None"}`);
 
       out.push({
         name: dir,
-        icon: iconFile || "",
+        icon: iconColor || "",
         themeVersion: versionMatch[1].trim(),
         cssFile: `${GITHUB_RAW}/themes/${dir}/theme.css`,
         owner: ownerMatch[1].trim(),
