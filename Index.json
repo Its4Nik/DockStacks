@@ -87,67 +87,92 @@
   ],
   "themes": [
     {
-      "name": "default",
+      "name": "DockStat Dark",
       "icon": "#818cf9",
       "themeVersion": "1",
       "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/default/theme.css",
-      "owner": "Its4Nik"
+      "owner": "Its4Nik",
+      "tags": "[default, dark]"
     },
     {
-      "name": "matrix-green",
-      "icon": "#10b981",
+      "name": "DockStat Midnight Purple",
+      "icon": "#a78bfa",
       "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/matrix-green/theme.css",
-      "owner": "Its4Nik"
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/midnight-purple/theme.css",
+      "owner": "Its4Nik",
+      "tags": "[dark]"
     },
     {
-      "name": "soft-blue",
+      "name": "DockStat Cyberpunk",
+      "icon": "#00f0ff",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/cyberpunk/theme.css",
+      "owner": "Its4Nik",
+      "tags": "[dark]"
+    },
+    {
+      "name": "DockStat Forest",
+      "icon": "#4ade80",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/forest/theme.css",
+      "owner": "Its4Nik",
+      "tags": "[dark]"
+    },
+    {
+      "name": "DockStat Obsidian Red",
+      "icon": "#f87171",
+      "themeVersion": "1",
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/obsidian-red/theme.css",
+      "owner": "Its4Nik",
+      "tags": "[dark]"
+    },
+    {
+      "name": "DockStat Steel Blue",
       "icon": "#60a5fa",
       "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/soft-blue/theme.css",
-      "owner": "Its4Nik"
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/steel-blue/theme.css",
+      "owner": "Its4Nik",
+      "tags": "[dark]"
     },
     {
-      "name": "pastel-breeze",
-      "icon": "#7dd3fc",
+      "name": "DockStat Morning Mist",
+      "icon": "#6366f1",
       "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/pastel-breeze/theme.css",
-      "owner": "Its4Nik"
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/morning-mist/theme.css",
+      "owner": "Its4Nik",
+      "tags": "[light]"
     },
     {
-      "name": "lilac-dream",
-      "icon": "#c4b5fd",
+      "name": "DockStat Beach",
+      "icon": "#f97316",
       "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/lilac-dream/theme.css",
-      "owner": "Its4Nik"
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/beach/theme.css",
+      "owner": "Its4Nik",
+      "tags": "[light]"
     },
     {
-      "name": "moody-red",
-      "icon": "#fca5a5",
-      "themeVersion": "2",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/moody-red/theme.css",
-      "owner": "Its4Nik"
-    },
-    {
-      "name": "cyber-grey",
-      "icon": "#a5b4fc",
+      "name": "DockStat Ocean",
+      "icon": "#06b6d4",
       "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/cyber-grey/theme.css",
-      "owner": "Its4Nik"
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/ocean/theme.css",
+      "owner": "Its4Nik",
+      "tags": "[light]"
     },
     {
-      "name": "valentine",
-      "icon": "#f9a8d4",
+      "name": "DockStat Lavender",
+      "icon": "#8b5cf6",
       "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/valentine/theme.css",
-      "owner": "Its4Nik"
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/lavender/theme.css",
+      "owner": "Its4Nik",
+      "tags": "[light]"
     },
     {
-      "name": "bubblegrunge",
-      "icon": "#f9a8d4",
+      "name": "DockStat Mint",
+      "icon": "#10b981",
       "themeVersion": "1",
-      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/bubblegrunge/theme.css",
-      "owner": "Its4Nik"
+      "cssFile": "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/themes/mint/theme.css",
+      "owner": "Its4Nik",
+      "tags": "[light]"
     }
   ]
 }

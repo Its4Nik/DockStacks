@@ -19,6 +19,7 @@ type ThemeEntry = {
   themeVersion: string;
   cssFile: string;
   owner: string;
+  tags: string;
 };
 
 async function loadTemplates(): Promise<TemplateEntry[]> {
@@ -89,11 +90,24 @@ async function loadThemes(): Promise<ThemeEntry[]> {
       const css = await Bun.file(cssPath).text();
       console.debug(`  📄 Loaded CSS from ${cssPath}`);
 
-      const nameMatch = css.match(/@name\s+(.+?)\s*\*\//);
-      const versionMatch = css.match(/@version\s+(.+?)\s*\*\//);
-      const ownerMatch = css.match(/@owner\s+(.+?)\s*\*\//);
-      if (!nameMatch || !versionMatch || !ownerMatch) {
-        throw new Error("Missing @name, @version or @owner in CSS");
+      const nameMatch = css
+        .match(/@name\s+(.+?)\s*\*\//)
+        ?.slice(1)
+        .join(" ");
+      const versionMatch = css
+        .match(/@version\s+(.+?)\s*\*\//)
+        ?.slice(1)
+        .join(" ");
+      const ownerMatch = css
+        .match(/@owner\s+(.+?)\s*\*\//)
+        ?.slice(1)
+        .join(" ");
+      const tagsMatch = css
+        .match(/@tags\s+(.+?)\s*\*\//)
+        ?.slice(1)
+        .join(", ");
+      if (!nameMatch || !versionMatch || !ownerMatch || !tagsMatch) {
+        throw new Error("Missing @name, @version, @owner, or @tags in CSS");
       }
 
       let iconColor: string;
@@ -115,11 +129,12 @@ async function loadThemes(): Promise<ThemeEntry[]> {
       console.debug(`  🖼️ Theme icon color: ${iconColor || "None"}`);
 
       out.push({
-        name: dir,
+        name: nameMatch,
         icon: iconColor || "",
-        themeVersion: versionMatch[1].trim(),
+        themeVersion: versionMatch,
         cssFile: `${GITHUB_RAW}/themes/${dir}/theme.css`,
-        owner: ownerMatch[1].trim(),
+        owner: ownerMatch,
+        tags: `[${tagsMatch}]`,
       });
     } catch (err) {
       console.warn("  ⚠️ Skipping theme “%s”: %s", dir, err.message);
