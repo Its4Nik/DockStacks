@@ -19,7 +19,7 @@ type ThemeEntry = {
   themeVersion: string;
   cssFile: string;
   owner: string;
-  tags: string;
+  tags: string[];
 };
 
 async function loadTemplates(): Promise<TemplateEntry[]> {
@@ -103,9 +103,11 @@ async function loadThemes(): Promise<ThemeEntry[]> {
         ?.slice(1)
         .join(" ");
       const tagsMatch = css
-        .match(/@tags\s+(.+?)\s*\*\//)
-        ?.slice(1)
-        .join(", ");
+        .match(/@tags\s+([^\*\/]+)/)?.[1]
+        .split(",")
+        .map((tag) => tag.trim())
+        .filter(Boolean);
+
       if (!nameMatch || !versionMatch || !ownerMatch || !tagsMatch) {
         throw new Error("Missing @name, @version, @owner, or @tags in CSS");
       }
@@ -134,7 +136,7 @@ async function loadThemes(): Promise<ThemeEntry[]> {
         themeVersion: versionMatch,
         cssFile: `${GITHUB_RAW}/themes/${dir}/theme.css`,
         owner: ownerMatch,
-        tags: `[${tagsMatch}]`,
+        tags: tagsMatch,
       });
     } catch (err) {
       console.warn("  ⚠️ Skipping theme “%s”: %s", dir, err.message);

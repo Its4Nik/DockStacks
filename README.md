@@ -24,18 +24,18 @@
 
 | Icon | Name | Version | Source |
 |------|------|---------|--------|
-| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/grafana/grafana.svg) | Grafana | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/nginx-proxy-manager/nginx-proxy-manager.svg) | Nginx-proxy-manager | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](No Icon available) | Outline | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/bookstack/bookstack.svg) | Bookstack | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
 | ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/adguardhome/adguard-home.svg) | AdGuardHome | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/uptime-kuma.svg) | Uptime-Kuma | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/heimdall/heimdall.svg) | Heimdall | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/bookstack/bookstack.svg) | Bookstack | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
 | ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/gitea/gitea.svg) | Gitea | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/grafana/grafana.svg) | Grafana | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/heimdall/heimdall.svg) | Heimdall | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](No Icon available) | Home Assistant | 1 | [Source](https://github.com/home-assistant/core) |
+| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/nginx-proxy-manager/nginx-proxy-manager.svg) | Nginx-proxy-manager | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](No Icon available) | PiHole | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
 | ![icon](No Icon available) | qCDN | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
 | ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/tianji/tianji.svg) | Tianji | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
-| ![icon](No Icon available) | Home Assistant | 1 | [Source](https://github.com/home-assistant/core) |
-| ![icon](No Icon available) | PiHole | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main/templates/uptime-kuma/uptime-kuma.svg) | Uptime-Kuma | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
+| ![icon](No Icon available) | Outline | 1 | [Source](https://github.com/Its4Nik/DockStacks) |
 
 ---
 
@@ -43,31 +43,21 @@
 
 | Icon | Name | Version | Owner |
 |------|------|---------|-------|
-<<<<<<< HEAD
 | ![icon](#818cf9) | DockStat Dark | 1 | Its4Nik |
-| ![icon](#a78bfa) | DockStat Midnight Purple | 1 | Its4Nik |
-| ![icon](#00f0ff) | DockStat Cyberpunk | 1 | Its4Nik |
-| ![icon](#4ade80) | DockStat Forest | 1 | Its4Nik |
-| ![icon](#f87171) | DockStat Obsidian Red | 1 | Its4Nik |
-| ![icon](#60a5fa) | DockStat Steel Blue | 1 | Its4Nik |
-| ![icon](#6366f1) | DockStat Morning Mist | 1 | Its4Nik |
-| ![icon](#f97316) | DockStat Beach | 1 | Its4Nik |
-| ![icon](#06b6d4) | DockStat Ocean | 1 | Its4Nik |
-| ![icon](#8b5cf6) | DockStat Lavender | 1 | Its4Nik |
-| ![icon](#10b981) | DockStat Mint | 1 | Its4Nik |
-=======
-| ![icon](#818cf9) | default | 1 | Its4Nik |
-| ![icon](#60a5fa) | steel-blue | 1 | Its4Nik |
-| ![icon](#a78bfa) | midnight-purple | 1 | Its4Nik |
-| ![icon](#06b6d4) | ocean | 1 | Its4Nik |
-| ![icon](#10b981) | mint | 1 | Its4Nik |
-| ![icon](#00f0ff) | cyberpunk | 1 | Its4Nik |
-| ![icon](#8b5cf6) | lavender | 1 | Its4Nik |
-| ![icon](#6366f1) | morning-mist | 1 | Its4Nik |
-| ![icon](#4ade80) | forest | 1 | Its4Nik |
-| ![icon](#f97316) | beach | 1 | Its4Nik |
-| ![icon](#f87171) | obsidian-red | 1 | Its4Nik |
->>>>>>> 457ac130415ad9fb5d6c1e8fbaa7cf003e254809
+| ![icon](#a78bfa) | Midnight Purple | 1 | Its4Nik |
+| ![icon](#00f0ff) | Cyberpunk | 1 | Its4Nik |
+| ![icon](#4ade80) | Forest | 1 | Its4Nik |
+| ![icon](#f87171) | Obsidian Red | 1 | Its4Nik |
+| ![icon](#60a5fa) | Steel Blue | 1 | Its4Nik |
+| ![icon](#6366f1) | Morning Mist | 1 | Its4Nik |
+| ![icon](#f97316) | Beach | 1 | Its4Nik |
+| ![icon](#06b6d4) | Ocean | 1 | Its4Nik |
+| ![icon](#8b5cf6) | Lavender | 1 | Its4Nik |
+| ![icon](#10b981) | Mint | 1 | Its4Nik |
+| ![icon](#bd93f9) | Dracula | 1 | Its4Nik |
+| ![icon](#00b894) | Forest Dusk | 1 | Its4Nik |
+| ![icon](#ff4081) | Lavender | 1 | Its4Nik |
+| ![icon](#4a9eff) | Midnight Blue | 1 | Its4Nik |
 
 ---
 
