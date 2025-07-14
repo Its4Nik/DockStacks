@@ -48,7 +48,7 @@
 | ![icon](#4a9eff) | Midnight Blue | 1 | Its4Nik |
 | ![icon](#a78bfa) | Midnight Purple | 1 | Its4Nik |
 | ![icon](#00b894) | Forest Dusk | 1 | Its4Nik |
-| ![icon](#ff4081) | Lavender | 1 | Its4Nik |
+| ![icon](#ff4081) | Retro Neon | 1 | Its4Nik |
 | ![icon](#06b6d4) | Ocean | 1 | Its4Nik |
 | ![icon](#10b981) | Mint | 1 | Its4Nik |
 | ![icon](#00f0ff) | Cyberpunk | 1 | Its4Nik |
