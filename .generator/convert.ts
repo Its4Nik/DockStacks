@@ -1,6 +1,7 @@
 #!/usr/bin/env bun
 import { join } from "path";
 import { $ } from "bun";
+import type { ThemeEntry } from "./typings/dockstacks";
 
 const GITHUB_RAW =
   "https://raw.githubusercontent.com/Its4Nik/DockStacks/refs/heads/main";
@@ -11,15 +12,6 @@ type TemplateEntry = {
   path: string;
   version: string;
   source: string;
-};
-
-type ThemeEntry = {
-  name: string;
-  icon: string;
-  themeVersion: string;
-  cssFile: string;
-  owner: string;
-  tags: string[];
 };
 
 async function loadTemplates(): Promise<TemplateEntry[]> {
@@ -78,9 +70,9 @@ async function loadTemplates(): Promise<TemplateEntry[]> {
   return out;
 }
 
-async function loadThemes(): Promise<ThemeEntry[]> {
+async function loadThemes(): Promise<Omit<ThemeEntry, "options">[]> {
   console.debug("🎨 Loading themes…");
-  const out: ThemeEntry[] = [];
+  const out: Omit<ThemeEntry, "options">[] = [];
   for await (const dir of (await $`ls ../themes`.text()).split("\n")) {
     if (!dir) continue;
     console.debug(`🔹 Processing theme directory: ${dir}`);
@@ -133,7 +125,6 @@ async function loadThemes(): Promise<ThemeEntry[]> {
       out.push({
         name: nameMatch,
         icon: iconColor || "",
-        themeVersion: versionMatch,
         cssFile: `${GITHUB_RAW}/themes/${dir}/theme.css`,
         owner: ownerMatch,
         tags: tagsMatch,
@@ -148,7 +139,7 @@ async function loadThemes(): Promise<ThemeEntry[]> {
 
 async function generateReadme(
   templates: TemplateEntry[],
-  themes: ThemeEntry[],
+  themes: Omit<ThemeEntry, "options">[],
 ) {
   const header = `# DockStacks 🐳
 
@@ -190,10 +181,7 @@ ${templates
 | Icon | Name | Version | Owner |
 |------|------|---------|-------|
 ${themes
-  .map(
-    (t) =>
-      `| ![icon](${t.icon || "No Icon available"}) | ${t.name} | ${t.themeVersion} | ${t.owner} |`,
-  )
+  .map((t) => `| ${t.icon || "No Icon available"} | ${t.name} | ${t.owner} |`)
   .join("\n")}
 
 ---

@@ -1,0 +1,3 @@
+[submodule ".generator/typings"]
+	path = .generator/typings
+	url = git@github.com:Its4Nik/DockStat-types.git

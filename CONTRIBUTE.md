@@ -1,13 +1,12 @@
 # Contributing Guide 🤝
 
-Thank you for wanting to share your Docker expertise! Follow these steps to add a new stack.
+-
+-
+-
 
 ## Template Creation Steps 📝
 
 ### 1. Create a Directory
-- Navigate to the [`templates`](./templates) folder.
-- Create a new directory named after your application (e.g., `my-app`).
-  - **Naming Rules**: Use lowercase letters, dashes, or underscores (no spaces).
 
 ### 2. Add `template.json`
 Create a `template.json` file with this structure:
